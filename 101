@@ -1,0 +1,19 @@
+outlook= input("Is it Overcast, Sunny or Rain today?")
+humidity= input("Is the humidity High or Normal?")
+wind= input("Is the wind Weak or Strong?")
+
+def playTennis(outlook, humidity, wind):
+    if outlook == "Overcast":
+        return "Yes"
+    elif outlook == "Sunny":
+        if humidity == "High":
+            return "No"
+        else:
+            return "Yes"
+    else:
+        if wind == "Strong":
+            return "No"
+        else:
+            return "Yes"
+shouldIplay= playTennis(outlook, humidity, wind)
+print(shouldIplay)
